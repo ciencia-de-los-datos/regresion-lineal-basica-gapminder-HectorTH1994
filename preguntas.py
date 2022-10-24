@@ -28,10 +28,10 @@ def pregunta_01():
     print(X.shape)
 
     # Transforme `y` a un array de numpy usando reshape
-    y_reshaped = y.reshape(y, (139,1))
+    y_reshaped = np.reshape(y, (139,1))
 
     # Trasforme `X` a un array de numpy usando reshape
-    X_reshaped = X.reshape(X, (139,1))
+    X_reshaped = np.reshape(X, (139,1))
 
     # Imprima las nuevas dimensiones de `y`
     print(y_reshaped.shape)
@@ -147,3 +147,4 @@ def pregunta_04():
     print("R^2: {:6.4f}".format(linearRegression.score(X_test, y_test)))
     rmse = np.sqrt(mean_squared_error(y_test, y_pred))
     print("Root Mean Squared Error: {:6.4f}".format(rmse))
+
